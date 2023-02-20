@@ -1,0 +1,78 @@
+---
+import Title from "../../components/Title.astro";
+
+---
+
+<section class="our-work">
+    <div class="container">
+        <div class="wrapper">
+            <Title>Наши работы</Title>
+
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Показать все</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Парикмахерские услуги</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Маникюр</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Педикюр</a>
+                </li>
+            </ul>
+
+            <div class="images">
+                <img src="src/assets/images/work-1.jpg" alt="">
+                <img src="src/assets/images/work-2.jpg" alt="">
+                <img src="src/assets/images/work-3.jpg" alt="">
+                <img src="src/assets/images/work-4.jpg" alt="">
+                <img src="src/assets/images/work-5.jpg" alt="">
+                <img src="src/assets/images/work-6.jpg" alt="">
+                <img src="src/assets/images/work-7.jpg" alt="">
+                <img src="src/assets/images/work-8.jpg" alt="">
+                <img src="src/assets/images/work-9.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+@import 'src/assets/styles/utils/var.scss';
+
+    .our-work{
+        padding: 190px 0 100px;
+
+        .wrapper{
+
+            .menu{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 60px;
+                padding: 80px 0 60px;
+
+                .menu-link{
+                    font-size: 24px;
+                    border-bottom: 1px solid transparent;
+                    transition: 0.3s;
+
+                    &:hover{
+                        color: $brand;
+                        border-color: $brand;
+                    }
+                }
+            }
+
+            .images{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+                img{
+                }
+            }
+        }
+    }
+
+</style>

@@ -1,0 +1,145 @@
+---
+import ImageWrap from "../../components/ImageWrap.astro";
+import Title from "../../components/Title.astro";
+---
+
+<section class="cosmetics">
+    <div class="container">
+        <div class="wrapper">
+            <Title>Косметика</Title>
+            <!-- card -->
+            <div class="card">
+                <ImageWrap height="320px">
+                   <a href="/services" class="link">
+                       <img src="src/assets/images/cosmetics-1.jpg" alt="">
+                   </a>
+                </ImageWrap>
+                
+                <div class="button">
+                    <button class="btn">подробности</button>
+                    <h3 class="name">Lorem, ipsum dolor.</h3>      
+                </div>
+
+            </div>
+
+            <!-- card -->
+            <div class="card">
+                <ImageWrap height="320px">
+                    <img src="src/assets/images/cosmetics-2.jpg" alt="">
+                </ImageWrap>
+                
+                <div class="button">
+                    <button class="btn">подробности</button>
+                    <h3 class="name">Lorem, ipsum dolor.</h3>      
+                </div>
+
+            </div>
+
+            <!-- card -->
+            <div class="card">
+                <ImageWrap height="320px">
+                    <img src="src/assets/images/cosmetics-3.jpg" alt="">
+                </ImageWrap>
+                
+                <div class="button">
+                    <button class="btn">подробности</button>
+                    <h3 class="name">Lorem, ipsum dolor.</h3>      
+                </div>
+
+            </div>
+            
+            <!-- card -->
+            <div class="card">
+                <ImageWrap height="320px">
+                    <img src="src/assets/images/cosmetics-4.jpg" alt="">
+                </ImageWrap>
+                
+                <div class="button">
+                    <button class="btn">подробности</button>
+                    <h3 class="name">Lorem, ipsum dolor.</h3>      
+                </div>
+
+            </div>
+
+            <!-- card -->
+            <div class="card">
+                <ImageWrap height="320px">
+                    <img src="src/assets/images/cosmetics-5.jpg" alt="">
+                </ImageWrap>
+                
+                <div class="button">
+                    <button class="btn">подробности</button>
+                    <h3 class="name">Lorem, ipsum dolor.</h3>      
+                </div>
+
+            </div>
+            
+            <!-- card -->
+            <div class="card">
+                <ImageWrap height="320px">
+                    <img src="src/assets/images/cosmetics-7.jpeg" alt="">
+                </ImageWrap>
+
+                <div class="button">
+                    <button class="btn">подробности</button>
+                    <h3 class="name">Lorem, ipsum dolor.</h3>      
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style lang="scss">
+    @import "src/assets/styles/utils/var.scss";
+    
+        .cosmetics{
+            padding-bottom: 162px;
+            padding: 120px;
+    
+            .wrapper{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 60px 20px;
+    
+                .card{
+                    width: 100%;
+                    max-width: 416px;
+                    min-width: 350px;
+
+
+    
+                    .button{
+                        display: flex;
+
+                        .btn{
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: #fff;
+                            font-family: $second-font;
+                            margin-top: 20px;
+                            border: 1px solid #fff;
+                            padding: 5px 10px;
+                            transition: 0.5s;
+                            border-radius: 5px;
+
+                            &:hover{
+                                background: $brand;
+                                color: #000;
+                            }
+                        }
+
+                        .name{
+                            font-size: 18px;
+                            font-weight: 400;
+                            color: #fff;
+                            margin-top: 20px;
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    </style>
